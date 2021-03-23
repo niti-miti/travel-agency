@@ -1,0 +1,86 @@
+.countries
+  padding-bottom: 80px
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 32px
+    line-height: 39px
+    margin-bottom: 32px
+    color: #1F2960
+    width: fit-content
+    &:after
+      content: ''
+      display: block
+      background-color: #FFCC00
+      height: 2px
+      width: 100%
+  &__image
+    position: relative
+    width: 421px
+    height: 288px
+    object-fit: cover
+    border-radius: 8px
+    margin-bottom: 25px
+    opacity: 0.4
+    transition: 1s
+  &-description
+    width: 450px
+    height: 346px
+    display: flex
+    margin-bottom: 30px
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    &:hover
+      .countries__image
+        transition: 1s
+        opacity: 1
+      .countries__link
+        &:after
+          width: 100%
+  &-bg
+    position: relative
+    background-color: rgba(15, 56, 201, 0.8)
+    display: block
+    width: 421px
+    height: 288px
+    border-radius: 8px
+  &__text
+    left: 0
+    position: absolute
+    font-style: normal
+    font-weight: normal
+    font-size: 40px
+    line-height: 49px
+    color: #FFFFFF
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+  &-link
+    text-decoration: none
+    outline: none
+  &__link
+    text-decoration: none
+    text-transform: uppercase
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    color: #1F2960
+    outline: none
+    &:after
+      content: ''
+      display: block
+      background-color: #FFCC00
+      height: 2px
+      width: 0%
+      transition: 1s
+  &-cards
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+.slick
+  &-slide
+    flex-direction: column
+    outline: none

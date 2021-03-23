@@ -1,0 +1,100 @@
+.number
+  background-image: url('../assets/number-bg.png')
+  padding-bottom: 153px
+  &-wrapper
+    max-width: 1090px
+    margin: auto
+    text-align: center
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 32px
+    line-height: 39px
+    color: #1F2960
+    width: fit-content
+    margin: auto
+    margin-top: 80px
+    margin-bottom: 72px
+    &:after
+      content: ''
+      display: block
+      background-color: #FFCC00
+      height: 2px
+      width: 45%
+      margin: auto
+  &-cards
+    display: flex
+    justify-content: space-between
+  &-card
+    background: rgba(255, 255, 255, 0.5)
+    backdrop-filter: blur(4px)
+    border-radius: 8px
+    width: 309px
+    height: 183px
+    overflow-y: auto
+    display: flex
+    align-items: center
+    justify-content: center
+  &__text
+    width: 280px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 22px
+    color: #1F2960
+    display: inline-block
+    horizontal-align: middle
+  &-form
+    margin-top: 140px
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 29px
+      color: #1F2960
+      margin-top: 0
+      margin-bottom: 8px
+    &__text
+      margin-top: 0
+      margin-bottom: 24px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 22px
+      color: #1F2960
+  &-inputs
+    max-width: 647px
+    display: flex
+    justify-content: space-between
+    margin: auto
+  &__input
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 20px
+    color: #6E7CCA
+    padding-top: 22px
+    padding-bottom: 22px
+    padding-left: 43px
+    background: #FFFFFF
+    border-radius: 62px
+    border: none
+    outline: none
+    width: 357px
+    padding-right: 21px
+    &--disable
+      display: none
+  &__button
+    text-decoration: none
+    padding: 21px 40px
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 22px
+    color: #FFFFFF
+    background: #FFCC00
+    border-radius: 45.6092px
+    transition: 0.3s
+    &:hover
+      transition: 0.3s
+      background: #2845DB
